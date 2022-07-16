@@ -1,0 +1,30 @@
+The focus of this update is to make Scriptable feel right at home on iOS 13 with a refreshed design, input and output parameters in Siri Shortcuts, support for opening the documentation in a new window and much more.
+
+- New: Redesigned editor that takes better advantage of the screen. On the iPad, you can drag the log to place it either on the left, right or in the bottom.
+- New: Pass input to a shortcut from the Shortcuts app and read it with args.shortcutParameter.
+- New: Pass plain texts, URLs, images and files to a shortcut from the Shortcuts app and read it with args.plainTexts, args.urls, args.images and args.fileURLs.
+- New: Return output from a script to the next shortcut in the Shortcuts app using Script.setShortcutOutput()
+- New: The list of scripts have had a minor design refresh to make it feel less cluttered.
+- New: Open the documentation in a new window on the iPad by pressing the ellipsis in the documentation and select "Open in New Window".
+- New: Light and dark mode now respects the system appearance. You can override the theme in the settings.
+- New: Quick Actions are now available on the iPad. Add Quick Actions from the settings to quickly run a script by long pressing the app icon on the home screen.
+- New: The order of scripts can now be synced between devices using iCloud. Enable this from the settings.
+- New: Use ESC or CMD+. on an external keyboard to dismiss any view presented with the QuickLook API.
+- New: The documentation now shows if properties are read-only. This have also been added to the online documentation.
+- New: Adds a Timer API which can be used to schedule timers that fire after a time interval.
+- New: Adds a DateFormatter API to create textual representations of dates and parse strings into dates.
+- New: Adds a RelativeDateTimeFormatter API that creates a textual representation communicating the amount of time between two dates.
+- New: Adds Device.isUsingDarkAppearance() which returns true if the device is currently using the dark appearance.
+- New: Adds fileManager.creationDate(), fileManager.modificationDate() and fileManager.fileSize().
+- New: Adds Photos.save() which saves an image to your photo library.
+- New: Adds DocumentPicker.openFile() and DocumentPicker.openFolder() which makes it easier to present a document picker that allows picking any single file or folder.
+- New: Adds Calendar.createForReminders() and Calendar.findOrCreateForReminders() APIs which creates new reminder lists.
+- New: Adds calendar.remove() which removes a calendar, for example a reminder list.
+- New: Adds fileManager.allFileBookmarks() which is be used to programmatically get a list of all the bookmarks you have created.
+- New: Adds a new property "dates" on a Contact. This hold dates that are important to a contact.
+- New: Adds new properties on Contact to check which values can be set and read on a contact. This can be used to check if a contacts container supports a particular feature.
+- New: xmlParser.didStartElement() now takes two parameters instead of one. In addition to the element name, a key value pair containing all attributes associated with the element is now provided.
+- New: Adding a closing curly bracket will automatically adjust the indentation if necessary.
+- New: The "Reminders Due Today" example script have been updated to be more readable and show how reminders can be marked as completed and tables can be refreshed when cells are selected.
+
+Please see "What's New" in the settings for the full list of changes in this version.
